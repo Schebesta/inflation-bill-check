@@ -171,6 +171,40 @@ button:focus-visible {
   gap: 8px;
 }
 
+.hero-ads {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+  max-width: 820px;
+}
+
+.hero-ads figure {
+  margin: 0;
+  background: var(--f-surface);
+  border: 1px solid var(--f-border);
+  border-radius: var(--f-radius);
+  overflow: hidden;
+  box-shadow: var(--f-shadow);
+}
+
+.hero-ads img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--f-canvas);
+}
+
+.hero-ads figcaption {
+  padding: 8px 10px;
+  border-top: 1px solid var(--f-border);
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--f-ink-2);
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .tick {
   color: var(--f-green);
   font-weight: 800;
@@ -584,6 +618,11 @@ th {
 
   .badge-draft {
     display: none;
+  }
+
+  .hero-ads {
+    grid-template-columns: 1fr;
+    max-width: 320px;
   }
 
   th,
