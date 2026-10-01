@@ -1,0 +1,297 @@
+/* Social ad creative — 1080x1080, rendered to PNG by scripts/render-ads.sh.
+   Text is real HTML/CSS so it stays crisp and spell-correct at full size. */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 1080px;
+  height: 1080px;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.ad {
+  width: 1080px;
+  height: 1080px;
+  padding: 76px 80px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- Logo lockup --- */
+
+.lockup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.lockup svg {
+  width: 52px;
+  height: 52px;
+  flex: none;
+}
+
+/* --- Shared type --- */
+
+.kicker {
+  display: inline-flex;
+  align-self: flex-start;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 13px 26px;
+}
+
+.headline {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.headline .hl {
+  color: #ffd23b;
+}
+
+.sub {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.38;
+  max-width: 21ch;
+}
+
+.spacer {
+  flex: 1;
+}
+
+/* --- Bill chips --- */
+
+.bills {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 15px 28px 15px 20px;
+}
+
+.chip .n {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 19px;
+  font-weight: 900;
+  flex: none;
+}
+
+/* --- CTA --- */
+
+.cta-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  background: #ffd23b;
+  color: #1f2329;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  border-radius: 16px;
+  padding: 26px 44px;
+}
+
+.cta svg {
+  width: 26px;
+  height: 26px;
+}
+
+.url {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* --- Variant A: deep blue --- */
+
+.v-a {
+  background: #0037c5;
+  color: #fff;
+  gap: 30px;
+}
+
+.v-a .lockup {
+  color: #fff;
+}
+
+.v-a .kicker {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffd23b;
+}
+
+.v-a .sub {
+  color: #cfdcff;
+}
+
+.v-a .chip {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.v-a .chip .n {
+  background: #ffd23b;
+  color: #0037c5;
+}
+
+.v-a .url {
+  color: #cfdcff;
+}
+
+/* Soft corner glow */
+.v-a::after {
+  content: "";
+  position: absolute;
+  width: 760px;
+  height: 760px;
+  right: -300px;
+  top: -340px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 82, 255, 0.95) 0%,
+    rgba(0, 55, 197, 0) 68%
+  );
+}
+
+.v-a > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Variant B: light --- */
+
+.v-b {
+  background: #ffffff;
+  color: #1f2329;
+  gap: 30px;
+}
+
+.v-b .kicker {
+  background: #e4f3f2;
+  color: #00655f;
+}
+
+.v-b .headline {
+  font-size: 74px;
+}
+
+.v-b .headline .hl {
+  color: #0037c5;
+}
+
+.v-b .sub {
+  color: #3d444f;
+  max-width: 24ch;
+}
+
+.v-b .chip {
+  background: #f2f4f8;
+  color: #1f2329;
+  border: 2px solid #e3e6ec;
+}
+
+.v-b .chip .n {
+  background: #0037c5;
+  color: #fff;
+}
+
+.v-b .url {
+  color: #6a7381;
+}
+
+/* Yellow underline rule under the lockup */
+.v-b .rule {
+  width: 112px;
+  height: 10px;
+  border-radius: 999px;
+  background: #ffd23b;
+}
+
+/* --- Variant C: ink --- */
+
+.v-c {
+  background: #15181d;
+  color: #fff;
+  gap: 30px;
+}
+
+.v-c .kicker {
+  background: rgba(0, 166, 81, 0.18);
+  color: #3fd98a;
+}
+
+.v-c .headline .hl {
+  color: #ffd23b;
+}
+
+.v-c .sub {
+  color: #aeb6c2;
+  max-width: 24ch;
+}
+
+.v-c .chip {
+  background: #22262d;
+  color: #fff;
+  border: 2px solid #31363f;
+}
+
+.v-c .chip .n {
+  background: #00a651;
+  color: #fff;
+}
+
+.v-c .url {
+  color: #8d96a3;
+}
+
+.v-c .ribbon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 100%;
+  background: linear-gradient(180deg, #ffd23b 0%, #00a651 50%, #0052ff 100%);
+}

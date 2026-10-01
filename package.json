@@ -1,0 +1,13 @@
+{
+  "name": "inflation-bill-check",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render:ads": "node render-ads.mjs",
+    "qa": "node render-ads.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  }
+}

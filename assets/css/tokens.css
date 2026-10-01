@@ -1,0 +1,35 @@
+/* Finder-inspired design tokens
+   Palette sourced from the Finder brand marks and prior Schebesta prototypes.
+   Yellow #FFD23B is the Finder logo yellow — reserved for primary CTAs only. */
+
+:root {
+  /* Brand */
+  --f-blue: #0052ff;
+  --f-blue-deep: #0037c5;
+  --f-blue-tint: #eef3ff;
+  --f-yellow: #ffd23b;
+  --f-yellow-hover: #f5c21c;
+  --f-green: #00a651;
+  --f-green-tint: #e8f7ef;
+  --f-teal: #00857d;
+  --f-teal-tint: #e4f3f2;
+
+  /* Neutrals */
+  --f-ink: #1f2329;
+  --f-ink-2: #3d444f;
+  --f-gray: #6a7381;
+  --f-border: #e3e6ec;
+  --f-surface: #ffffff;
+  --f-canvas: #f6f7f9;
+
+  /* Type */
+  --f-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif;
+
+  /* Space + shape */
+  --f-radius: 12px;
+  --f-radius-lg: 20px;
+  --f-shadow: 0 1px 2px rgba(31, 35, 41, 0.06), 0 4px 16px rgba(31, 35, 41, 0.06);
+  --f-shadow-lift: 0 2px 4px rgba(31, 35, 41, 0.08), 0 12px 32px rgba(31, 35, 41, 0.1);
+  --f-maxw: 1080px;
+}
