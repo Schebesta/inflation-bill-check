@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #16191f;
+  background: #f6f7fb;
+}
+
+a {
+  color: inherit;
+}
+
+.topbar {
+  min-height: 72px;
+  padding: 16px clamp(20px, 4vw, 56px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e8ef;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.mark {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #0052ff;
+  color: #ffd23b;
+  font-weight: 900;
+}
+
+.draft {
+  color: #667085;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hero {
+  min-height: calc(100vh - 72px);
+  padding: clamp(44px, 8vw, 96px) clamp(20px, 5vw, 72px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.65fr);
+  gap: clamp(28px, 6vw, 72px);
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgba(0, 82, 255, 0.08), rgba(255, 210, 59, 0.16)),
+    #ffffff;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: #0052ff;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0;
+  font-weight: 900;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 900px;
+  margin-bottom: 22px;
+  font-size: clamp(54px, 7.5vw, 112px);
+  line-height: 0.96;
+  letter-spacing: 0;
+}
+
+.lede {
+  max-width: 720px;
+  margin-bottom: 30px;
+  color: #3d4656;
+  font-size: clamp(19px, 2.2vw, 25px);
+  line-height: 1.42;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn {
+  min-height: 52px;
+  padding: 15px 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.primary {
+  background: #0052ff;
+  color: #ffffff;
+}
+
+.secondary {
+  background: #edf1f8;
+  color: #222936;
+}
+
+.snapshot {
+  padding: clamp(24px, 4vw, 36px);
+  border: 1px solid #d8deea;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 24px 60px rgba(22, 25, 31, 0.12);
+}
+
+.label {
+  margin-bottom: 20px;
+  color: #667085;
+  font-weight: 800;
+}
+
+.metric {
+  padding: 18px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.metric span {
+  color: #596273;
+  font-weight: 700;
+}
+
+.metric strong {
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1;
+}
+
+.metric.danger strong {
+  color: #c7352a;
+}
+
+.callout {
+  margin: 24px 0 0;
+  padding: 18px;
+  border-radius: 8px;
+  background: #fff3c4;
+  color: #43390f;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.checker,
+.mockups {
+  padding: clamp(48px, 7vw, 86px) clamp(20px, 5vw, 72px);
+}
+
+.section-head {
+  max-width: 780px;
+  margin-bottom: 30px;
+}
+
+.section-head h2,
+.calculator-brief h2 {
+  margin-bottom: 10px;
+  font-size: clamp(30px, 4vw, 52px);
+  letter-spacing: 0;
+}
+
+.section-head p,
+.calculator-brief li {
+  color: #4b5565;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.steps article,
+.calculator-brief {
+  padding: 24px;
+  border: 1px solid #dfe4ee;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.num {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffd23b;
+  color: #202531;
+  font-weight: 900;
+}
+
+.steps h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.steps p {
+  margin-bottom: 0;
+  color: #566174;
+  line-height: 1.5;
+}
+
+.calculator-brief {
+  margin-top: 18px;
+}
+
+.calculator-brief ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.ad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ad-grid figure {
+  margin: 0;
+  padding: 12px;
+  border: 1px solid #dfe4ee;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.ad-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.ad-grid figcaption {
+  padding: 12px 2px 2px;
+  color: #525d6f;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+@media (max-width: 860px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero,
+  .steps,
+  .ad-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+}

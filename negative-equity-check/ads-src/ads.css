@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 1080px;
+  height: 1080px;
+  overflow: hidden;
+}
+
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ad {
+  width: 1080px;
+  height: 1080px;
+  padding: 76px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.lockup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.mark {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #0052ff;
+  color: #ffd23b;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.kicker {
+  width: fit-content;
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 900px;
+  font-size: 86px;
+  line-height: 1.02;
+  letter-spacing: 0;
+  font-weight: 900;
+}
+
+.sub {
+  max-width: 770px;
+  font-size: 34px;
+  line-height: 1.28;
+  font-weight: 700;
+}
+
+.proof {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.proof span {
+  padding: 18px;
+  border-radius: 18px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.cta {
+  width: fit-content;
+  padding: 24px 36px;
+  border-radius: 16px;
+  background: #ffd23b;
+  color: #15181d;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.v1 {
+  background: #0037c5;
+  color: #ffffff;
+}
+
+.v1 .kicker,
+.v1 .proof span {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffd23b;
+}
+
+.v1 .sub {
+  color: #dce6ff;
+}
+
+.v2 {
+  background: #ffffff;
+  color: #15181d;
+}
+
+.v2 .kicker {
+  background: #fff3c4;
+  color: #7a4f00;
+}
+
+.v2 .proof span {
+  background: #eef3ff;
+  color: #0037c5;
+}
+
+.v2 .sub {
+  color: #414b5b;
+}
+
+.v3 {
+  background: #15181d;
+  color: #ffffff;
+}
+
+.v3 .kicker {
+  background: #253044;
+  color: #ffd23b;
+}
+
+.v3 .proof span {
+  background: #252c38;
+  color: #ffffff;
+}
+
+.v3 .sub {
+  color: #d6dbe5;
+}
