@@ -32,6 +32,18 @@ const ads = [
     "distressed-listing-check/ads-src/ad-3-plan.html",
     "distressed-listing-check/assets/ads/ad-3-plan.png",
   ],
+  [
+    "offset-rate-cut/ads-src/ad-1-hidden-rate-cut.html",
+    "offset-rate-cut/assets/ads/ad-1-hidden-rate-cut.png",
+  ],
+  [
+    "offset-rate-cut/ads-src/ad-2-offset-fee.html",
+    "offset-rate-cut/assets/ads/ad-2-offset-fee.png",
+  ],
+  [
+    "offset-rate-cut/ads-src/ad-3-redraw-tradeoff.html",
+    "offset-rate-cut/assets/ads/ad-3-redraw-tradeoff.png",
+  ],
 ];
 
 await mkdir(path.join(root, "assets/ads"), { recursive: true });
