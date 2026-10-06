@@ -20,6 +20,18 @@ const ads = [
     "negative-equity-check/ads-src/ad-3-lvr-shift.html",
     "negative-equity-check/assets/ads/ad-3-lvr-shift.png",
   ],
+  [
+    "distressed-listing-check/ads-src/ad-1-clearance.html",
+    "distressed-listing-check/assets/ads/ad-1-clearance.png",
+  ],
+  [
+    "distressed-listing-check/ads-src/ad-2-unsold.html",
+    "distressed-listing-check/assets/ads/ad-2-unsold.png",
+  ],
+  [
+    "distressed-listing-check/ads-src/ad-3-plan.html",
+    "distressed-listing-check/assets/ads/ad-3-plan.png",
+  ],
 ];
 
 await mkdir(path.join(root, "assets/ads"), { recursive: true });
