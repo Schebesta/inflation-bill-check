@@ -44,6 +44,18 @@ const ads = [
     "offset-rate-cut/ads-src/ad-3-redraw-tradeoff.html",
     "offset-rate-cut/assets/ads/ad-3-redraw-tradeoff.png",
   ],
+  [
+    "savings-rate-trap/ads-src/ad-1-automatic-vs-conditional.html",
+    "savings-rate-trap/assets/ads/ad-1-automatic-vs-conditional.png",
+  ],
+  [
+    "savings-rate-trap/ads-src/ad-2-base-rate-trap.html",
+    "savings-rate-trap/assets/ads/ad-2-base-rate-trap.png",
+  ],
+  [
+    "savings-rate-trap/ads-src/ad-3-conditions-check.html",
+    "savings-rate-trap/assets/ads/ad-3-conditions-check.png",
+  ],
 ];
 
 await mkdir(path.join(root, "assets/ads"), { recursive: true });

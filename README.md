@@ -7,6 +7,7 @@ https://schebesta.github.io/inflation-bill-check/
 https://schebesta.github.io/inflation-bill-check/negative-equity-check/
 https://schebesta.github.io/inflation-bill-check/distressed-listing-check/
 https://schebesta.github.io/inflation-bill-check/offset-rate-cut/
+https://schebesta.github.io/inflation-bill-check/savings-rate-trap/
 
 ## Assets
 
@@ -22,6 +23,9 @@ https://schebesta.github.io/inflation-bill-check/offset-rate-cut/
 - `offset-rate-cut/assets/ads/ad-1-hidden-rate-cut.png`
 - `offset-rate-cut/assets/ads/ad-2-offset-fee.png`
 - `offset-rate-cut/assets/ads/ad-3-redraw-tradeoff.png`
+- `savings-rate-trap/assets/ads/ad-1-automatic-vs-conditional.png`
+- `savings-rate-trap/assets/ads/ad-2-base-rate-trap.png`
+- `savings-rate-trap/assets/ads/ad-3-conditions-check.png`
 
 ## Regenerate Ads
 

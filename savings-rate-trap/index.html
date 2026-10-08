@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Savings Rate Trap - what the bonus conditions cost you</title>
+    <meta
+      name="description"
+      content="A draft Finder campaign page showing savers what they lose when a headline bonus rate drops back to the base rate."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../negative-equity-check/assets/css/site.css" />
+    <link rel="stylesheet" href="assets/css/page.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Finder">
+        <span class="mark">f</span>
+        Savings Rate Trap
+      </a>
+      <span class="draft">Draft Opportunity Sniper page</span>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">All four majors reprice on 9 October 2026</p>
+          <h1>The rise is automatic. The reward is conditional.</h1>
+          <p class="lede">
+            Every major bank is passing the full +0.25% through to variable home
+            loans from 9 October. On the savings side, most of the increase
+            lands in the bonus rate - the part you only get if you hit every
+            condition that month. CBA's GoalSaver base rate is 0.10%. NAB's
+            Reward Saver base rate is 0.01%. This flow turns that asymmetry into
+            a dollar figure.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#checker">Check what you lost</a>
+            <a class="btn secondary" href="#mockups">View ad mockups</a>
+          </div>
+        </div>
+
+        <aside class="snapshot" aria-label="Market snapshot">
+          <p class="label">Verified trigger</p>
+          <div class="metric danger">
+            <span>Variable home loans</span>
+            <strong>+0.25%</strong>
+          </div>
+          <div class="metric">
+            <span>Takes effect</span>
+            <strong>9 Oct</strong>
+          </div>
+          <div class="metric danger">
+            <span>CBA GoalSaver base</span>
+            <strong>0.10%</strong>
+          </div>
+          <div class="metric danger">
+            <span>NAB Reward Saver base</span>
+            <strong>0.01%</strong>
+          </div>
+          <p class="callout">
+            The borrower pays the rise on every dollar, every month. The saver
+            earns the rise only in the months they pass the test.
+          </p>
+        </aside>
+      </section>
+
+      <section class="checker" id="checker">
+        <div class="section-head">
+          <h2>The Finder flow</h2>
+          <p>
+            Make the gap between the advertised rate and the earned rate
+            concrete, then route savers to a better account or to the conditions
+            they are quietly failing.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article>
+            <span class="num">1</span>
+            <h3>Separate the two rates</h3>
+            <p>Ask for the headline bonus rate and the base rate that applies when a condition is missed.</p>
+          </article>
+          <article>
+            <span class="num">2</span>
+            <h3>Count the missed months</h3>
+            <p>Most savers cannot name their conditions, let alone how often they broke them. Make them count.</p>
+          </article>
+          <article>
+            <span class="num">3</span>
+            <h3>Route on the gap</h3>
+            <p>Big gap and frequent misses means switch. Big gap and rare misses means fix the conditions.</p>
+          </article>
+        </div>
+
+        <div class="utility">
+          <form id="trap-form" novalidate>
+            <h2>What the conditions cost you</h2>
+            <p class="hint">
+              Enter your own numbers. Everything is worked out in your browser -
+              nothing is sent anywhere.
+            </p>
+
+            <div class="presets">
+              <p class="preset-label">Base-rate examples:</p>
+              <button class="chip" type="button" data-base="0.10">
+                CBA GoalSaver 0.10%
+              </button>
+              <button class="chip" type="button" data-base="0.01">
+                NAB Reward Saver 0.01%
+              </button>
+            </div>
+
+            <div class="fields">
+              <div class="field">
+                <label for="balance">Savings balance</label>
+                <div class="input-wrap">
+                  <span class="affix" aria-hidden="true">$</span>
+                  <input
+                    id="balance"
+                    name="balance"
+                    type="number"
+                    inputmode="numeric"
+                    min="0"
+                    max="10000000"
+                    step="500"
+                    value="25000"
+                  />
+                </div>
+                <span class="note">The average balance you held over the last 12 months.</span>
+              </div>
+
+              <div class="field">
+                <label for="bonus">Headline bonus rate</label>
+                <div class="input-wrap">
+                  <input
+                    id="bonus"
+                    name="bonus"
+                    type="number"
+                    inputmode="decimal"
+                    min="0"
+                    max="20"
+                    step="0.05"
+                    value="4.75"
+                  />
+                  <span class="affix" aria-hidden="true">% p.a.</span>
+                </div>
+                <span class="note">The advertised rate - the one on the ad, including the bonus.</span>
+              </div>
+
+              <div class="field">
+                <label for="base">Base / fallback rate</label>
+                <div class="input-wrap">
+                  <input
+                    id="base"
+                    name="base"
+                    type="number"
+                    inputmode="decimal"
+                    min="0"
+                    max="20"
+                    step="0.01"
+                    value="0.10"
+                  />
+                  <span class="affix" aria-hidden="true">% p.a.</span>
+                </div>
+                <span class="note">What you drop to in any month you miss a condition.</span>
+              </div>
+
+              <div class="field">
+                <label for="missed-range">Months you missed the conditions</label>
+                <div class="months">
+                  <input
+                    id="missed-range"
+                    type="range"
+                    min="0"
+                    max="12"
+                    step="1"
+                    value="3"
+                    aria-label="Months you missed the conditions, slider"
+                  />
+                  <div class="input-wrap">
+                    <input
+                      id="missed"
+                      name="missed"
+                      type="number"
+                      inputmode="numeric"
+                      min="0"
+                      max="12"
+                      step="1"
+                      value="3"
+                      aria-label="Months you missed the conditions"
+                    />
+                    <span class="affix" aria-hidden="true">/ 12</span>
+                  </div>
+                </div>
+                <span class="note">Out of the last 12 months. Not sure? Check the conditions below.</span>
+              </div>
+            </div>
+          </form>
+
+          <div class="result" aria-live="polite">
+            <p class="label">Over the last 12 months</p>
+            <strong class="headline-figure" id="out-lost">$356</strong>
+            <p class="headline-caption" id="out-lost-caption">
+              lost to missed bonus conditions
+            </p>
+
+            <ul class="result-rows">
+              <li>
+                <span>Interest if you never missed</span>
+                <strong id="out-full">$1,188</strong>
+              </li>
+              <li>
+                <span>Interest you actually earned</span>
+                <strong id="out-actual">$832</strong>
+              </li>
+              <li>
+                <span>Rate you really earned</span>
+                <strong id="out-effective">3.33% p.a.</strong>
+              </li>
+              <li>
+                <span>Cost of each missed month</span>
+                <strong id="out-permonth">$119</strong>
+              </li>
+            </ul>
+
+            <p class="verdict" id="out-verdict">
+              Three missed months is a third of your bonus gone. Worth checking
+              whether the conditions or the account is the problem.
+            </p>
+
+            <div class="actions">
+              <a
+                class="btn primary"
+                href="https://www.finder.com.au/savings-accounts"
+                >Compare savings accounts</a
+              >
+              <a class="btn secondary" href="#conditions"
+                >Check your bonus conditions</a
+              >
+            </div>
+
+            <p class="fineprint">
+              Simple interest, no compounding, balance held flat. Indicative
+              only - your account's terms decide what actually gets paid.
+            </p>
+          </div>
+        </div>
+
+        <div class="conditions" id="conditions">
+          <h2>The bonus-condition check</h2>
+          <p class="hint">
+            Tick every condition your account puts on the bonus rate. One missed
+            tick in a month is usually enough to drop the whole month to the
+            base rate.
+          </p>
+
+          <ul class="condition-list">
+            <li>
+              <label>
+                <input type="checkbox" class="cond" />
+                Deposit a minimum amount each month
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="cond" />
+                Make no withdrawals in the month
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="cond" />
+                Grow the balance month on month
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="cond" />
+                Make a set number of card transactions
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="cond" />
+                Keep a linked everyday account open
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="cond" />
+                Stay under a maximum bonus-rate balance cap
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="cond" />
+                Be under an age limit for the higher rate
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="cond" />
+                Meet an introductory period that has an end date
+              </label>
+            </li>
+          </ul>
+
+          <p class="condition-tally" id="out-conditions">
+            Tick the conditions that apply to your account.
+          </p>
+        </div>
+
+        <div class="calculator-brief">
+          <h2>Landing-page brief</h2>
+          <ul>
+            <li>Input: savings balance, headline bonus rate, base/fallback rate, and months the conditions were missed.</li>
+            <li>Output: dollars lost over 12 months, interest earned versus interest advertised, the rate actually earned, and the cost of a single slip.</li>
+            <li>Primary CTA: compare savings accounts, weighted to accounts with a liveable base rate rather than the biggest headline.</li>
+            <li>Secondary CTA: the bonus-condition check, for savers whose account is fine but whose habits are not.</li>
+            <li>Timing peg: the +0.25% variable home-loan rises land 9 Oct 2026, so the asymmetry story is live that week.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mockups" id="mockups">
+        <div class="section-head">
+          <h2>Ad mockups</h2>
+          <p>Square social variants for Meta, Instagram and partner/creator read-outs.</p>
+        </div>
+
+        <div class="ad-grid">
+          <figure>
+            <img
+              src="assets/ads/ad-1-automatic-vs-conditional.png"
+              alt="Ad mockup: The rise is automatic. The reward is conditional."
+              width="1080"
+              height="1080"
+            />
+            <figcaption>Variant A - automatic vs conditional</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/ads/ad-2-base-rate-trap.png"
+              alt="Ad mockup: Miss one condition and you are back on 0.10 percent."
+              width="1080"
+              height="1080"
+            />
+            <figcaption>Variant B - base-rate trap</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/ads/ad-3-conditions-check.png"
+              alt="Ad mockup: Your savings rate has terms. Do you know them?"
+              width="1080"
+              height="1080"
+            />
+            <figcaption>Variant C - conditions check</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>
+        <strong>Draft test asset.</strong> Built to test the upgraded
+        Opportunity Sniper process. Not a published Finder page and not
+        financial advice.
+      </p>
+      <p>
+        Base rates shown (CBA GoalSaver 0.10%, NAB Reward Saver 0.01%) and the
+        9 October 2026 variable home-loan rises are the creative hook under
+        test. The default headline bonus rate in the calculator is illustrative,
+        not a quoted product rate. Verify every figure against current Finder
+        data before any real spend.
+      </p>
+    </footer>
+
+    <script>
+      (function () {
+        var balanceEl = document.getElementById("balance");
+        var bonusEl = document.getElementById("bonus");
+        var baseEl = document.getElementById("base");
+        var missedEl = document.getElementById("missed");
+        var missedRangeEl = document.getElementById("missed-range");
+
+        var outLost = document.getElementById("out-lost");
+        var outLostCaption = document.getElementById("out-lost-caption");
+        var outFull = document.getElementById("out-full");
+        var outActual = document.getElementById("out-actual");
+        var outEffective = document.getElementById("out-effective");
+        var outPerMonth = document.getElementById("out-permonth");
+        var outVerdict = document.getElementById("out-verdict");
+        var outConditions = document.getElementById("out-conditions");
+
+        var money0 = new Intl.NumberFormat("en-AU", {
+          style: "currency",
+          currency: "AUD",
+          maximumFractionDigits: 0,
+        });
+        var money2 = new Intl.NumberFormat("en-AU", {
+          style: "currency",
+          currency: "AUD",
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2,
+        });
+
+        function dollars(value) {
+          return value > 0 && value < 10 ? money2.format(value) : money0.format(value);
+        }
+
+        function clamp(value, min, max) {
+          if (isNaN(value)) return min;
+          return Math.min(max, Math.max(min, value));
+        }
+
+        function update() {
+          var balance = clamp(parseFloat(balanceEl.value), 0, 10000000);
+          var bonus = clamp(parseFloat(bonusEl.value), 0, 20);
+          var base = clamp(parseFloat(baseEl.value), 0, 20);
+          var missed = Math.round(clamp(parseFloat(missedEl.value), 0, 12));
+
+          // Simple interest, balance held flat: bonus months pay the headline
+          // rate, missed months fall back to the base rate.
+          var fullYear = (balance * bonus) / 100;
+          var earned =
+            (balance * bonus * (12 - missed)) / 1200 +
+            (balance * base * missed) / 1200;
+          var lost = Math.max(0, fullYear - earned);
+          var perMonth = (balance * Math.max(0, bonus - base)) / 1200;
+          var effective = balance > 0 ? (earned / balance) * 100 : 0;
+
+          outLost.textContent = dollars(lost);
+          outFull.textContent = dollars(fullYear);
+          outActual.textContent = dollars(earned);
+          outEffective.textContent = effective.toFixed(2) + "% p.a.";
+          outPerMonth.textContent = dollars(perMonth);
+
+          if (base > bonus) {
+            outLostCaption.textContent =
+              "your base rate is above your bonus rate - check those two figures";
+          } else if (lost <= 0) {
+            outLostCaption.textContent = "lost to missed bonus conditions";
+          } else {
+            outLostCaption.textContent =
+              "lost to missed bonus conditions over 12 months";
+          }
+
+          outVerdict.classList.remove("is-clear", "is-danger");
+          if (base > bonus) {
+            outVerdict.classList.add("is-danger");
+            outVerdict.textContent =
+              "The base rate you entered is higher than the bonus rate. Re-read your statement - the headline rate is usually the one with the conditions attached.";
+          } else if (missed === 0) {
+            outVerdict.classList.add("is-clear");
+            outVerdict.textContent =
+              "A clean 12 months. Worth confirming the bonus rate has not been cut since you opened the account - and that the intro period has not quietly ended.";
+          } else if (missed >= 6) {
+            outVerdict.classList.add("is-danger");
+            outVerdict.textContent =
+              "You missed the conditions in half the year or more. At " +
+              effective.toFixed(2) +
+              "% you are earning closer to the base rate than the rate you signed up for. An account with a higher base rate may beat this one outright.";
+          } else {
+            outVerdict.textContent =
+              "You kept " +
+              (12 - missed) +
+              " of 12 bonus months, and the slips cost " +
+              dollars(lost) +
+              ". Check whether the conditions or the account is the thing to change.";
+          }
+        }
+
+        function syncMissed(source, target) {
+          target.value = String(Math.round(clamp(parseFloat(source.value), 0, 12)));
+        }
+
+        [balanceEl, bonusEl, baseEl].forEach(function (el) {
+          el.addEventListener("input", update);
+        });
+
+        missedRangeEl.addEventListener("input", function () {
+          syncMissed(missedRangeEl, missedEl);
+          update();
+        });
+
+        missedEl.addEventListener("input", function () {
+          syncMissed(missedEl, missedRangeEl);
+          update();
+        });
+
+        Array.prototype.forEach.call(
+          document.querySelectorAll(".chip"),
+          function (chip) {
+            chip.addEventListener("click", function () {
+              baseEl.value = chip.getAttribute("data-base");
+              update();
+            });
+          }
+        );
+
+        var conditions = document.querySelectorAll(".cond");
+
+        function updateConditions() {
+          var ticked = 0;
+          Array.prototype.forEach.call(conditions, function (cond) {
+            if (cond.checked) ticked += 1;
+          });
+
+          if (ticked === 0) {
+            outConditions.textContent =
+              "Tick the conditions that apply to your account.";
+          } else if (ticked === 1) {
+            outConditions.textContent =
+              "One condition to clear every single month before the bonus is paid.";
+          } else {
+            outConditions.textContent =
+              ticked +
+              " conditions to clear every single month. Miss any one of them and the whole month usually drops to the base rate.";
+          }
+        }
+
+        Array.prototype.forEach.call(conditions, function (cond) {
+          cond.addEventListener("change", updateConditions);
+        });
+
+        document
+          .getElementById("trap-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+          });
+
+        update();
+        updateConditions();
+      })();
+    </script>
+  </body>
+</html>
