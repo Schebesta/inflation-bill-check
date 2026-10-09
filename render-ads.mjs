@@ -56,6 +56,18 @@ const ads = [
     "savings-rate-trap/ads-src/ad-3-conditions-check.html",
     "savings-rate-trap/assets/ads/ad-3-conditions-check.png",
   ],
+  [
+    "switch-break-even/ads-src/ad-1-79-not-decision.html",
+    "switch-break-even/assets/ads/ad-1-79-not-decision.png",
+  ],
+  [
+    "switch-break-even/ads-src/ad-2-break-even.html",
+    "switch-break-even/assets/ads/ad-2-break-even.png",
+  ],
+  [
+    "switch-break-even/ads-src/ad-3-refi-falling.html",
+    "switch-break-even/assets/ads/ad-3-refi-falling.png",
+  ],
 ];
 
 await mkdir(path.join(root, "assets/ads"), { recursive: true });
