@@ -8,6 +8,7 @@ https://schebesta.github.io/inflation-bill-check/negative-equity-check/
 https://schebesta.github.io/inflation-bill-check/distressed-listing-check/
 https://schebesta.github.io/inflation-bill-check/offset-rate-cut/
 https://schebesta.github.io/inflation-bill-check/savings-rate-trap/
+https://schebesta.github.io/inflation-bill-check/switch-break-even/
 
 ## Assets
 
