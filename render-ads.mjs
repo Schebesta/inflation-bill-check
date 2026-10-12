@@ -68,6 +68,18 @@ const ads = [
     "switch-break-even/ads-src/ad-3-refi-falling.html",
     "switch-break-even/assets/ads/ad-3-refi-falling.png",
   ],
+  [
+    "satellite-mobile-check/ads-src/ad-1-dead-zones.html",
+    "satellite-mobile-check/assets/ads/ad-1-dead-zones.png",
+  ],
+  [
+    "satellite-mobile-check/ads-src/ad-2-satellite-hype.html",
+    "satellite-mobile-check/assets/ads/ad-2-satellite-hype.png",
+  ],
+  [
+    "satellite-mobile-check/ads-src/ad-3-coverage-feature.html",
+    "satellite-mobile-check/assets/ads/ad-3-coverage-feature.png",
+  ],
 ];
 
 await mkdir(path.join(root, "assets/ads"), { recursive: true });

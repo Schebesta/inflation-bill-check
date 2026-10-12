@@ -9,6 +9,7 @@ https://schebesta.github.io/inflation-bill-check/distressed-listing-check/
 https://schebesta.github.io/inflation-bill-check/offset-rate-cut/
 https://schebesta.github.io/inflation-bill-check/savings-rate-trap/
 https://schebesta.github.io/inflation-bill-check/switch-break-even/
+https://schebesta.github.io/inflation-bill-check/satellite-mobile-check/
 
 ## Assets
 
@@ -27,6 +28,12 @@ https://schebesta.github.io/inflation-bill-check/switch-break-even/
 - `savings-rate-trap/assets/ads/ad-1-automatic-vs-conditional.png`
 - `savings-rate-trap/assets/ads/ad-2-base-rate-trap.png`
 - `savings-rate-trap/assets/ads/ad-3-conditions-check.png`
+- `switch-break-even/assets/ads/ad-1-79-not-decision.png`
+- `switch-break-even/assets/ads/ad-2-break-even.png`
+- `switch-break-even/assets/ads/ad-3-refi-falling.png`
+- `satellite-mobile-check/assets/ads/ad-1-dead-zones.png`
+- `satellite-mobile-check/assets/ads/ad-2-satellite-hype.png`
+- `satellite-mobile-check/assets/ads/ad-3-coverage-feature.png`
 
 ## Regenerate Ads
 

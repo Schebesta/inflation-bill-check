@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Satellite Mobile Check | Finder</title>
+    <meta
+      name="description"
+      content="Check whether satellite-to-mobile coverage should matter when you compare your next Australian mobile plan."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../negative-equity-check/assets/css/site.css" />
+    <link rel="stylesheet" href="../savings-rate-trap/assets/css/page.css" />
+    <link rel="stylesheet" href="./assets/css/page.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Finder">
+        <span class="mark">f</span>
+        Finder
+      </a>
+      <span class="draft">Mobile plan coverage check</span>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Mobile plans</p>
+          <h1>Should your next phone plan include satellite backup?</h1>
+          <p class="lede">
+            Satellite-to-mobile coverage is shifting from future hype to a real plan feature.
+            Answer a few questions about your provider, phone, travel and dead zones to see
+            whether it is worth switching now, waiting, or setting an alert.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#checker">Check my plan</a>
+            <a class="btn secondary" href="https://www.finder.com.au/mobile-plans">Compare mobile plans</a>
+          </div>
+        </div>
+
+        <aside class="snapshot" aria-label="Coverage snapshot">
+          <p class="label">Coverage signal</p>
+          <div class="metric">
+            <span>Remote travel</span>
+            <strong>High</strong>
+          </div>
+          <div class="metric danger">
+            <span>Dead zones</span>
+            <strong>Weekly</strong>
+          </div>
+          <div class="metric">
+            <span>Phone readiness</span>
+            <strong>Check</strong>
+          </div>
+          <div class="metric">
+            <span>Best next step</span>
+            <strong>Alert</strong>
+          </div>
+          <p class="callout">
+            Cheap data is not the only comparison anymore. Coverage resilience may be the
+            feature that decides which plan is worth paying for.
+          </p>
+        </aside>
+      </section>
+
+      <section class="checker" id="checker">
+        <div class="section-head">
+          <h2>Run the satellite mobile check</h2>
+          <p>
+            This is a practical triage tool. It does not tell you to buy a plan.
+            It helps you decide whether satellite-to-mobile should be on your comparison list.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article>
+            <span class="num">1</span>
+            <h3>Map your need</h3>
+            <p>Remote driving, regional work and regular dead zones matter more than a headline feature.</p>
+          </article>
+          <article>
+            <span class="num">2</span>
+            <h3>Check readiness</h3>
+            <p>Provider support, phone model and service limits decide whether the feature is useful today.</p>
+          </article>
+          <article>
+            <span class="num">3</span>
+            <h3>Pick a next move</h3>
+            <p>Switch now, wait for wider rollout, or set an alert for your current provider.</p>
+          </article>
+        </div>
+
+        <div class="utility">
+          <form id="satellite-form" novalidate>
+            <h2>Does satellite coverage matter for you?</h2>
+            <p class="hint">
+              Use the closest match. Availability and supported devices can change, so confirm
+              details with the provider before switching.
+            </p>
+
+            <div class="fields">
+              <div class="field">
+                <label for="provider">Current provider type</label>
+                <div class="select-wrap">
+                  <select id="provider" name="provider">
+                    <option value="2">Major network provider</option>
+                    <option value="1">Smaller brand on a major network</option>
+                    <option value="0">Not sure</option>
+                  </select>
+                  <span class="caret" aria-hidden="true">v</span>
+                </div>
+                <span class="note">Some satellite features may launch first through network owners.</span>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone readiness</label>
+                <div class="select-wrap">
+                  <select id="phone" name="phone">
+                    <option value="2">Recent compatible smartphone</option>
+                    <option value="1">Recent phone, compatibility unknown</option>
+                    <option value="0">Older phone or planning to upgrade</option>
+                  </select>
+                  <span class="caret" aria-hidden="true">v</span>
+                </div>
+                <span class="note">Satellite text and data features usually start with limited devices.</span>
+              </div>
+
+              <div class="field">
+                <label for="travel">Regional or remote travel</label>
+                <div class="select-wrap">
+                  <select id="travel" name="travel">
+                    <option value="2">Monthly or more</option>
+                    <option value="1">A few times a year</option>
+                    <option value="0">Rarely</option>
+                  </select>
+                  <span class="caret" aria-hidden="true">v</span>
+                </div>
+                <span class="note">The more you leave metro coverage, the more this feature matters.</span>
+              </div>
+
+              <div class="field">
+                <label for="deadzone">How often do you hit dead zones?</label>
+                <div class="select-wrap">
+                  <select id="deadzone" name="deadzone">
+                    <option value="2">Weekly</option>
+                    <option value="1">Monthly</option>
+                    <option value="0">Hardly ever</option>
+                  </select>
+                  <span class="caret" aria-hidden="true">v</span>
+                </div>
+                <span class="note">A coverage feature only pays off if it solves a real pain.</span>
+              </div>
+
+              <div class="field">
+                <label for="backup">Emergency backup need</label>
+                <div class="select-wrap">
+                  <select id="backup" name="backup">
+                    <option value="2">Important for family, work or travel</option>
+                    <option value="1">Nice to have</option>
+                    <option value="0">Not important</option>
+                  </select>
+                  <span class="caret" aria-hidden="true">v</span>
+                </div>
+                <span class="note">Safety use cases are different from everyday data value.</span>
+              </div>
+            </div>
+          </form>
+
+          <div class="result" aria-live="polite">
+            <p class="label">Satellite need score</p>
+            <strong class="headline-figure" id="out-score">8 / 10</strong>
+            <p class="headline-caption" id="out-caption">coverage should be on your comparison list</p>
+            <div class="score-bar" id="score-bar"><span style="width: 80%"></span></div>
+
+            <ul class="result-rows">
+              <li>
+                <span>Switch urgency</span>
+                <strong id="out-urgency">Medium</strong>
+              </li>
+              <li>
+                <span>Device check</span>
+                <strong id="out-device">Confirm model</strong>
+              </li>
+              <li>
+                <span>Comparison filter</span>
+                <strong id="out-filter">Coverage backup</strong>
+              </li>
+              <li>
+                <span>Next best action</span>
+                <strong id="out-action">Set alert</strong>
+              </li>
+            </ul>
+
+            <p class="verdict" id="out-verdict">
+              <span class="verdict-tag">Waitlist and compare</span>
+              Satellite backup could matter for you, but check device support and plan inclusions before switching.
+            </p>
+
+            <div class="actions">
+              <a class="btn primary" href="https://www.finder.com.au/mobile-plans">Compare mobile plans</a>
+              <a class="btn secondary" href="#brief">What to check</a>
+            </div>
+
+            <p class="fineprint">
+              This is factual guidance only. Network coverage, device support and plan features can change.
+            </p>
+          </div>
+        </div>
+
+        <div class="context" id="brief">
+          <h2>What to check before changing plans</h2>
+          <p>
+            Satellite-to-mobile is not just a cheaper-data story. It changes the comparison question:
+            when you lose normal mobile coverage, does your plan give you a useful fallback?
+          </p>
+          <div class="context-grid">
+            <article>
+              <h3>Feature limits</h3>
+              <p>Check whether the service supports text only, emergency messaging, voice, data or all of the above.</p>
+            </article>
+            <article>
+              <h3>Phone support</h3>
+              <p>Look for the exact compatible devices and software versions, not just the provider's brand claim.</p>
+            </article>
+            <article>
+              <h3>Coverage use case</h3>
+              <p>If you rarely leave metro coverage, a cheaper plan may beat paying for a feature you barely use.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <h2>Sources and checks</h2>
+      <ul class="sources">
+        <li>
+          SpaceX's October spectrum move points to direct mobile competition, but Australian availability depends on local partners and regulatory rollout.
+        </li>
+        <li>
+          Optus has announced Starlink direct-to-cell ambitions for Australian landmass coverage:
+          <a href="https://www.mobileworldlive.com/featured-content/top-three/spacex-optus-target-nationwide-australia-coverage/">Mobile World Live</a>.
+        </li>
+        <li>
+          Telstra has launched satellite-to-mobile text messaging for eligible customers and devices:
+          <a href="https://www.telstra.com.au/exchange/telstra-launch-satellite-messaging">Telstra</a>.
+        </li>
+      </ul>
+      <p>
+        This page is general information only and does not consider your objectives, financial situation or needs.
+      </p>
+    </footer>
+
+    <script>
+      const form = document.querySelector("#satellite-form");
+      const score = document.querySelector("#out-score");
+      const caption = document.querySelector("#out-caption");
+      const bar = document.querySelector("#score-bar");
+      const barFill = document.querySelector("#score-bar span");
+      const urgency = document.querySelector("#out-urgency");
+      const device = document.querySelector("#out-device");
+      const filter = document.querySelector("#out-filter");
+      const action = document.querySelector("#out-action");
+      const verdict = document.querySelector("#out-verdict");
+
+      const labels = {
+        low: {
+          caption: "satellite probably should not drive the decision yet",
+          urgency: "Low",
+          device: "Check later",
+          filter: "Price and data",
+          action: "Wait",
+          tag: "Do not overpay",
+          copy: "Satellite backup sounds useful, but your answers suggest price, data and everyday coverage matter more right now.",
+          className: "is-clear",
+        },
+        medium: {
+          caption: "coverage should be on your comparison list",
+          urgency: "Medium",
+          device: "Confirm model",
+          filter: "Coverage backup",
+          action: "Set alert",
+          tag: "Waitlist and compare",
+          copy: "Satellite backup could matter for you, but check device support and plan inclusions before switching.",
+          className: "",
+        },
+        high: {
+          caption: "satellite backup could be worth acting on",
+          urgency: "High",
+          device: "Check now",
+          filter: "Satellite support",
+          action: "Compare now",
+          tag: "Prioritise coverage",
+          copy: "You have enough dead-zone or travel need to make satellite support a serious comparison feature.",
+          className: "is-danger",
+        },
+      };
+
+      function update() {
+        const values = [...form.querySelectorAll("select")].map((select) => Number(select.value));
+        const total = values.reduce((sum, value) => sum + value, 0);
+        const state = total >= 8 ? labels.high : total >= 4 ? labels.medium : labels.low;
+
+        score.textContent = `${total} / 10`;
+        caption.textContent = state.caption;
+        urgency.textContent = state.urgency;
+        device.textContent = state.device;
+        filter.textContent = state.filter;
+        action.textContent = state.action;
+        verdict.innerHTML = `<span class="verdict-tag">${state.tag}</span>${state.copy}`;
+        bar.className = `score-bar ${state.className}`;
+        score.className = `headline-figure ${state.className}`;
+        barFill.style.width = `${Math.max(10, total * 10)}%`;
+      }
+
+      form.addEventListener("change", update);
+      update();
+    </script>
+  </body>
+</html>
