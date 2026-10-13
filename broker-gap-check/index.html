@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Broker Gap Check | Finder</title>
+    <meta
+      name="description"
+      content="Check whether your mortgage broker showed you the cheapest comparable home loan option."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../negative-equity-check/assets/css/site.css" />
+    <link rel="stylesheet" href="../savings-rate-trap/assets/css/page.css" />
+    <link rel="stylesheet" href="./assets/css/page.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Finder">
+        <span class="mark">f</span>
+        Finder
+      </a>
+      <span class="draft">Home loan broker audit</span>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Home loans</p>
+          <h1>Did your broker show you the cheapest comparable loan?</h1>
+          <p class="lede">
+            ASIC says seven of eight broker aggregator groups reported brokers did not recommend
+            the cheapest loan option in more than 20% of cases. Run a quick check before you
+            refinance, renew, or assume your broker already found the best deal.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#checker">Check my broker gap</a>
+            <a class="btn secondary" href="https://www.finder.com.au/home-loans">Compare home loans</a>
+          </div>
+        </div>
+
+        <aside class="snapshot" aria-label="Broker gap snapshot">
+          <p class="label">Broker gap signal</p>
+          <div class="metric danger">
+            <span>ASIC review</span>
+            <strong>20%+</strong>
+          </div>
+          <div class="metric">
+            <span>Broker share</span>
+            <strong>80%+</strong>
+          </div>
+          <div class="metric">
+            <span>Cash rate</span>
+            <strong>4.60%</strong>
+          </div>
+          <div class="metric">
+            <span>Best next step</span>
+            <strong>Audit</strong>
+          </div>
+          <p class="callout">
+            Cheapest is not always best. But if a costlier loan was recommended, the reason should
+            be clear enough for you to understand.
+          </p>
+        </aside>
+      </section>
+
+      <section class="checker" id="checker">
+        <div class="section-head">
+          <h2>Run the broker gap check</h2>
+          <p>
+            Estimate whether your broker recommendation deserves a second look. This is not
+            personal advice. It is a triage step before comparing rates or asking your broker
+            for evidence.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article>
+            <span class="num">1</span>
+            <h3>Enter your rate</h3>
+            <p>Use the rate on the loan your broker recommended or arranged.</p>
+          </article>
+          <article>
+            <span class="num">2</span>
+            <h3>Compare the gap</h3>
+            <p>Test it against the cheapest comparable rate you can find today.</p>
+          </article>
+          <article>
+            <span class="num">3</span>
+            <h3>Ask for evidence</h3>
+            <p>If the costlier pick has benefits, they should be documented.</p>
+          </article>
+        </div>
+
+        <div class="utility">
+          <form id="broker-form" novalidate>
+            <h2>What could the gap cost?</h2>
+            <p class="hint">
+              Keep the comparison fair: same borrower type, repayment type, loan purpose and
+              major features where possible.
+            </p>
+
+            <div class="fields">
+              <div class="field">
+                <label for="loan">Loan balance</label>
+                <div class="input-wrap">
+                  <span>$</span>
+                  <input id="loan" name="loan" type="number" min="50000" step="1000" value="750000" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="broker-rate">Broker recommended rate</label>
+                <div class="input-wrap">
+                  <input id="broker-rate" name="broker-rate" type="number" min="1" max="15" step="0.01" value="6.24" />
+                  <span>%</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="cheap-rate">Cheapest comparable rate found</label>
+                <div class="input-wrap">
+                  <input id="cheap-rate" name="cheap-rate" type="number" min="1" max="15" step="0.01" value="5.84" />
+                  <span>%</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="features">Were costlier features explained?</label>
+                <div class="select-wrap">
+                  <select id="features" name="features">
+                    <option value="0">No, or not clearly</option>
+                    <option value="1">Somewhat</option>
+                    <option value="2">Yes, with written reasons</option>
+                  </select>
+                  <span class="caret" aria-hidden="true">v</span>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="result" aria-live="polite">
+            <p class="label">Estimated broker gap</p>
+            <strong class="headline-figure" id="out-gap">$250 / month</strong>
+            <p class="headline-caption" id="out-caption">worth asking for the comparison file</p>
+            <div class="score-bar" id="score-bar"><span style="width: 66%"></span></div>
+
+            <ul class="result-rows">
+              <li>
+                <span>Rate difference</span>
+                <strong id="out-diff">0.40%</strong>
+              </li>
+              <li>
+                <span>Approx. yearly cost</span>
+                <strong id="out-year">$3,000</strong>
+              </li>
+              <li>
+                <span>Evidence need</span>
+                <strong id="out-evidence">High</strong>
+              </li>
+              <li>
+                <span>Next best action</span>
+                <strong id="out-action">Ask why</strong>
+              </li>
+            </ul>
+
+            <p class="verdict" id="out-verdict">
+              <span class="verdict-tag">Broker audit</span>
+              Ask your broker to show the cheaper comparable options they considered and why the
+              recommended loan was better for you.
+            </p>
+
+            <div class="actions">
+              <a class="btn primary" href="https://www.finder.com.au/home-loans">Compare home loans</a>
+              <a class="btn secondary" href="#brief">What to ask</a>
+            </div>
+
+            <p class="fineprint">
+              Estimate only. Actual repayments depend on fees, loan term, repayment type and features.
+            </p>
+          </div>
+        </div>
+
+        <div class="context" id="brief">
+          <h2>What to ask your broker</h2>
+          <p>
+            A costlier loan can still be in your best interests. The useful question is whether
+            the reason is clear, current and specific to you.
+          </p>
+          <div class="context-grid">
+            <article>
+              <h3>Show me the cheaper options</h3>
+              <p>Ask for the comparable loans considered, including rates, fees and exclusions.</p>
+            </article>
+            <article>
+              <h3>Explain the trade-off</h3>
+              <p>Offset, redraw, cashback and approval certainty can matter, but the benefit should be named.</p>
+            </article>
+            <article>
+              <h3>Check again before signing</h3>
+              <p>Rates move quickly. Run one fresh comparison before settlement or refinance approval.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <h2>Sources and checks</h2>
+      <ul class="sources">
+        <li>
+          ASIC REP 840 found seven of eight aggregator groups reported brokers did not recommend
+          the cheapest loan option in more than 20% of cases.
+          <a href="https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-240mr-asic-review-finds-room-for-improvement-in-mortgage-brokers-best-interests-duty-practices/">ASIC</a>
+        </li>
+        <li>
+          ASIC says more than 80% of home loans are now arranged through mortgage brokers.
+        </li>
+        <li>
+          The RBA cash rate is 4.60%, set on 29 September 2026.
+          <a href="https://www.rba.gov.au/media-releases/2026/mr-26-27.html">RBA</a>
+        </li>
+      </ul>
+      <p>
+        General information only. It does not consider your objectives, financial situation or needs.
+      </p>
+    </footer>
+
+    <script>
+      const form = document.querySelector("#broker-form");
+      const gap = document.querySelector("#out-gap");
+      const caption = document.querySelector("#out-caption");
+      const bar = document.querySelector("#score-bar");
+      const barFill = document.querySelector("#score-bar span");
+      const diff = document.querySelector("#out-diff");
+      const year = document.querySelector("#out-year");
+      const evidence = document.querySelector("#out-evidence");
+      const action = document.querySelector("#out-action");
+      const verdict = document.querySelector("#out-verdict");
+
+      const money = new Intl.NumberFormat("en-AU", {
+        style: "currency",
+        currency: "AUD",
+        maximumFractionDigits: 0,
+      });
+
+      function update() {
+        const loan = Number(document.querySelector("#loan").value) || 0;
+        const brokerRate = Number(document.querySelector("#broker-rate").value) || 0;
+        const cheapRate = Number(document.querySelector("#cheap-rate").value) || 0;
+        const featureScore = Number(document.querySelector("#features").value);
+        const rateGap = Math.max(0, brokerRate - cheapRate);
+        const yearly = loan * (rateGap / 100);
+        const monthly = yearly / 12;
+        const pressure = Math.min(100, Math.max(10, rateGap * 150 + (2 - featureScore) * 18));
+        const high = rateGap >= 0.35 && featureScore < 2;
+        const medium = rateGap >= 0.15 || featureScore === 0;
+
+        gap.textContent = `${money.format(monthly)} / month`;
+        diff.textContent = `${rateGap.toFixed(2)}%`;
+        year.textContent = money.format(yearly);
+        evidence.textContent = high ? "High" : medium ? "Medium" : "Low";
+        action.textContent = high ? "Ask why" : medium ? "Check file" : "Keep record";
+        caption.textContent = high
+          ? "worth asking for the comparison file"
+          : medium
+            ? "worth a fresh comparison"
+            : "likely a documented trade-off";
+        verdict.innerHTML = high
+          ? `<span class="verdict-tag">Broker audit</span>Ask your broker to show the cheaper comparable options they considered and why the recommended loan was better for you.`
+          : medium
+            ? `<span class="verdict-tag">Second look</span>The gap is not huge, but a current comparison and written rationale could still save money.`
+            : `<span class="verdict-tag">Keep the evidence</span>The gap looks small or explained. Keep the broker file and check again if rates move.`;
+        barFill.style.width = `${pressure}%`;
+        bar.className = `score-bar ${high ? "is-danger" : medium ? "" : "is-clear"}`;
+        gap.className = `headline-figure ${high ? "is-danger" : medium ? "" : "is-clear"}`;
+      }
+
+      form.addEventListener("input", update);
+      form.addEventListener("change", update);
+      update();
+    </script>
+  </body>
+</html>

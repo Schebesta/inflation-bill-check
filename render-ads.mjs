@@ -80,6 +80,18 @@ const ads = [
     "satellite-mobile-check/ads-src/ad-3-coverage-feature.html",
     "satellite-mobile-check/assets/ads/ad-3-coverage-feature.png",
   ],
+  [
+    "broker-gap-check/ads-src/ad-1-cheapest-loan.html",
+    "broker-gap-check/assets/ads/ad-1-cheapest-loan.png",
+  ],
+  [
+    "broker-gap-check/ads-src/ad-2-twenty-percent.html",
+    "broker-gap-check/assets/ads/ad-2-twenty-percent.png",
+  ],
+  [
+    "broker-gap-check/ads-src/ad-3-ask-why.html",
+    "broker-gap-check/assets/ads/ad-3-ask-why.png",
+  ],
 ];
 
 await mkdir(path.join(root, "assets/ads"), { recursive: true });
